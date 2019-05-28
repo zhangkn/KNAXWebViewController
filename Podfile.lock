@@ -16,6 +16,14 @@ DEPENDENCIES:
   - AXPracticalHUD
   - NJKWebViewProgress
 
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Aspects
+    - AXIndicatorView
+    - AXNavigationBackItemInjection
+    - AXPracticalHUD
+    - NJKWebViewProgress
+
 SPEC CHECKSUMS:
   Aspects: 7595ba96a6727a58ebcbfc954497fc5d2fdde546
   AXIndicatorView: 566b490a2dd9781d4ffbcc9752be9b9cdc6e728e
@@ -25,4 +33,4 @@ SPEC CHECKSUMS:
 
 PODFILE CHECKSUM: 207fd9270929cf3153a3b3d5d06cc43eac68880f
 
-COCOAPODS: 1.3.1
+COCOAPODS: 1.5.3

@@ -167,3 +167,4 @@ iOS8.0以上使用`WKWebView`实现，进度条使用`UIProgressView`实现. 实
 ### 0.3.0
 使用[AXNavigationBackItemInjection](https://github.com/devedbox/AXNavigationBackItemInjection)实现微信导航样式，也可以自定义返回的操作，只需要几行代码就可以搞定！
 #### 查看更多日志请移步[`Latest release`](https://github.com/devedbox/AXWebViewController/releases/latest).
+# KNAXWebViewController

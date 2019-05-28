@@ -70,6 +70,10 @@ typedef struct {
     /// Cached content offset state of the web view.
     NSCache *_contentOffsetCache;
 }
+
+@property(strong, nonatomic) UIBarButtonItem *HomeBarButtonItem;
+
+
 /// Back bar button item of tool bar.
 @property(strong, nonatomic) UIBarButtonItem *backBarButtonItem;
 /// Forward bar button item of tool bar.
@@ -695,6 +699,15 @@ BOOL AX_WEB_VIEW_CONTROLLER_iOS10_0_AVAILABLE() { return AX_WEB_VIEW_CONTROLLER_
     return _forwardBarButtonItem;
 }
 
+
+
+- (UIBarButtonItem *)HomeBarButtonItem {
+    if (_HomeBarButtonItem) return _HomeBarButtonItem;
+    _HomeBarButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemRefresh target:self action:@selector(reloadFirstNSURLClicked:)];
+    return _HomeBarButtonItem;
+}
+
+
 - (UIBarButtonItem *)refreshBarButtonItem {
     if (_refreshBarButtonItem) return _refreshBarButtonItem;
     _refreshBarButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemRefresh target:self action:@selector(reloadClicked:)];
@@ -1124,6 +1137,17 @@ BOOL AX_WEB_VIEW_CONTROLLER_iOS10_0_AVAILABLE() { return AX_WEB_VIEW_CONTROLLER_
     }
 #endif
 }
+
+
+
+
+- (void)reloadFirstNSURLClicked:(UIBarButtonItem *)sender {
+    [self willReload];
+    
+    [self loadURL:[NSURL URLWithString:self.HomeUrl]];
+    
+}
+
 - (void)reloadClicked:(UIBarButtonItem *)sender {
     [self willReload];
 #if AX_WEB_VIEW_CONTROLLER_USING_WEBKIT
@@ -1812,11 +1836,13 @@ BOOL AX_WEB_VIEW_CONTROLLER_iOS10_0_AVAILABLE() { return AX_WEB_VIEW_CONTROLLER_
     
     if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad) {
         fixedSpace.width = 35.0f;
-        NSArray *items = [NSArray arrayWithObjects:fixedSpace, refreshStopBarButtonItem, fixedSpace, self.backBarButtonItem, fixedSpace, self.forwardBarButtonItem, fixedSpace, self.actionBarButtonItem, nil];
+        NSArray *items = [NSArray arrayWithObjects:fixedSpace,self.HomeBarButtonItem,fixedSpace, refreshStopBarButtonItem, fixedSpace, self.backBarButtonItem, fixedSpace, self.forwardBarButtonItem, fixedSpace, self.actionBarButtonItem, nil];
         
         self.navigationItem.rightBarButtonItems = items.reverseObjectEnumerator.allObjects;
     } else {
-        NSArray *items = [NSArray arrayWithObjects: fixedSpace, self.backBarButtonItem, flexibleSpace, self.forwardBarButtonItem, flexibleSpace, refreshStopBarButtonItem, flexibleSpace, self.actionBarButtonItem, fixedSpace, nil];
+        
+        NSArray *items = [NSArray arrayWithObjects: fixedSpace,self.HomeBarButtonItem,fixedSpace, self.backBarButtonItem, flexibleSpace, self.forwardBarButtonItem, flexibleSpace, refreshStopBarButtonItem, flexibleSpace, self.actionBarButtonItem, fixedSpace, nil];
+
         
         self.navigationController.toolbar.barStyle = self.navigationController.navigationBar.barStyle;
         self.navigationController.toolbar.tintColor = self.navigationController.navigationBar.tintColor;
