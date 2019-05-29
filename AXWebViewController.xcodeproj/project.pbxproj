@@ -19,7 +19,8 @@
 		01CDC1511C2A3C9100D9AF53 /* AXWebViewController.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 01CDC1501C2A3C9100D9AF53 /* AXWebViewController.bundle */; };
 		01CDC15D1C2A41DF00D9AF53 /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 01CDC15C1C2A41DF00D9AF53 /* TableViewController.m */; };
 		04682A67229E1E400078D209 /* UIImage+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 04682A65229E1E400078D209 /* UIImage+Extension.m */; };
-		04682A69229E1FF90078D209 /* AXWebViewController.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 04682A68229E1FF90078D209 /* AXWebViewController.podspec */; };
+		04682A6B229E23060078D209 /* KNAXWebViewController.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 04682A6A229E23060078D209 /* KNAXWebViewController.podspec */; };
+		04682A6D229E24C20078D209 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 04682A6C229E24C20078D209 /* README.md */; };
 		97F6BE6D557C0BB485DDCF88 /* libPods-AXWebViewController.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2642E682614F41BF460E7673 /* libPods-AXWebViewController.a */; };
 		DCA3C59F1FB0302F008DB632 /* FullScreenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DCA3C59E1FB0302F008DB632 /* FullScreenViewController.m */; };
 		DCABA01B1EC5EE2A005C7D31 /* AXSecurityPolicy.m in Sources */ = {isa = PBXBuildFile; fileRef = DCABA01A1EC5EE2A005C7D31 /* AXSecurityPolicy.m */; };
@@ -51,7 +52,8 @@
 		0326F0589F0B7F449EE39607 /* Pods-AXWebViewController.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AXWebViewController.release.xcconfig"; path = "Pods/Target Support Files/Pods-AXWebViewController/Pods-AXWebViewController.release.xcconfig"; sourceTree = "<group>"; };
 		04682A65229E1E400078D209 /* UIImage+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Extension.m"; sourceTree = "<group>"; };
 		04682A66229E1E400078D209 /* UIImage+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Extension.h"; sourceTree = "<group>"; };
-		04682A68229E1FF90078D209 /* AXWebViewController.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = AXWebViewController.podspec; sourceTree = SOURCE_ROOT; };
+		04682A6A229E23060078D209 /* KNAXWebViewController.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = KNAXWebViewController.podspec; sourceTree = SOURCE_ROOT; };
+		04682A6C229E24C20078D209 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
 		2642E682614F41BF460E7673 /* libPods-AXWebViewController.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AXWebViewController.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B7311EC599653BFAAF42107 /* Pods-AXWebViewController.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AXWebViewController.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AXWebViewController/Pods-AXWebViewController.debug.xcconfig"; sourceTree = "<group>"; };
 		A13CC1551E977227003AC1B2 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/Main.strings"; sourceTree = "<group>"; };
@@ -124,7 +126,8 @@
 		01513C081C28F90300CB8238 /* AXWebViewController */ = {
 			isa = PBXGroup;
 			children = (
-				04682A68229E1FF90078D209 /* AXWebViewController.podspec */,
+				04682A6A229E23060078D209 /* KNAXWebViewController.podspec */,
+				04682A6C229E24C20078D209 /* README.md */,
 				01513C051C28F90000CB8238 /* AXWebViewController.h */,
 				04682A66229E1E400078D209 /* UIImage+Extension.h */,
 				04682A65229E1E400078D209 /* UIImage+Extension.m */,
@@ -263,10 +266,11 @@
 			files = (
 				01CDC1511C2A3C9100D9AF53 /* AXWebViewController.bundle in Resources */,
 				01513BFE1C28F70700CB8238 /* LaunchScreen.storyboard in Resources */,
+				04682A6B229E23060078D209 /* KNAXWebViewController.podspec in Resources */,
+				04682A6D229E24C20078D209 /* README.md in Resources */,
 				01513BFB1C28F70700CB8238 /* Assets.xcassets in Resources */,
 				DCCF48241E7987C9009CF38E /* Swift.pdf in Resources */,
 				01513BF91C28F70700CB8238 /* Main.storyboard in Resources */,
-				04682A69229E1FF90078D209 /* AXWebViewController.podspec in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
