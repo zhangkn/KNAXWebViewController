@@ -64,6 +64,8 @@
  --
  __attribute((objc_requires_super)) was first introduced as work in progress into CLANG in September 2012 and was documented in October 2013. On both OS X and iOS there is now a NS_REQUIRES_SUPER macro that conditionally wraps the objc_requires_super attribute depending on compiler support. Once a method declaration is appended with this macro, the compiler will produce a warning if super is not called by a subclass overriding the method.
 */
+#import "UIImage+Extension.h"
+
 
 NS_ASSUME_NONNULL_BEGIN
 @class AXWebViewController;
