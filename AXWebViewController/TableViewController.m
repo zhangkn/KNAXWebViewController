@@ -65,7 +65,7 @@
             [self presentViewController:nav animated:YES completion:NULL];
             webVC.showsToolBar = YES;
             webVC.navigationType = 1;
-            [webVC setHomeUrl:@"https://github.com/DoTalkLily/LYWebViewController"];
+            [webVC setHomeUrl:@"https://github.com/zhangkn/KNAXWebViewController"];
         }
             break;
         case 3: {
