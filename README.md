@@ -1,5 +1,9 @@
 
-# KNAXWebViewController
+
+![image](https://ws2.sinaimg.cn/large/af39b376gy1g3i0hkm6ggj20u01hcqoq.jpg)
+
+
+# pod `KNAXWebViewController`
 
 
 ```
@@ -13,6 +17,17 @@ pod trunk push  KNAXWebViewController.podspec --allow-warnings
 
 ```
 
+#### how to use
+
+```
+#import <KNAXWebViewController/AXWebViewController.h>
+
+[(AXWebViewController*)nav.topViewController loadURL:[NSURL URLWithString:responseObject[@"wap_url"]]];
+[(AXWebViewController*)nav.topViewController setHomeUrl:responseObject[@"wap_url"]];
+
+```
+
+
 # see also
 
 #### `  Ensure that Xcode -> Window -> Devices has at least one `ios` simulator listed or otherwise add one.) during validation.`
@@ -22,6 +37,16 @@ pod trunk push  KNAXWebViewController.podspec --allow-warnings
 
 ```
 
+
+```
+🎉  Congrats
+
+🚀  KNAXWebViewController (0.7.6) successfully published
+📅  May 28th, 21:00
+🌎  https://cocoapods.org/pods/KNAXWebViewController
+👍  Tell your friends!
+
+```
 
 
 
