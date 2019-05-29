@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
 #
 
 s.name         = "KNAXWebViewController"
-s.version      = "0.7.5"
+s.version      = "0.7.6"
 s.summary      = "A light weight web view controller in iOS."
 
 # This description is used to generate tags and improve search results.
@@ -111,9 +111,9 @@ s.source_files  = "AXWebViewController/AXWebViewController/*.{h,m}", "AXWebViewC
 s.resource  = "AXWebViewController/AXWebViewController/AXWebViewController.bundle"
 # s.resources = "Resources/*.png"
 
- s.resource_bundles = {
-   'KNAXWebViewController' => ['AXWebViewController/Assets/*.png']
- }
+# s.resource_bundles = {
+#   'AXWebViewController' => ['AXWebViewController/Assets/*.png']
+# }
 
 # s.preserve_paths = "FilesToSave", "MoreFilesToSave"
 

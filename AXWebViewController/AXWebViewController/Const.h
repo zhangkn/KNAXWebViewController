@@ -23,7 +23,7 @@ extern   NSString *const UATBaseURL;
 extern   NSString *const SITINTRANETBaseURL ;
 extern   NSString *const SITEXTRANETBaseURL ;
 //KNPodlib.bundle
-#define MYBUNDLE_NAME @"KNAXWebViewController.bundle"
+#define MYBUNDLE_NAME @"AXWebViewController.bundle"
 //#define MYBUNDLE_PATH [[NSBundle bundleForClass:NSClassFromString(@"Const")].resourcePath stringByAppendingPathComponent:MYBUNDLE_NAME]
 
 #define MYBUNDLE_PATH [[NSBundle bundleForClass:[self class]].resourcePath stringByAppendingPathComponent:MYBUNDLE_NAME]
