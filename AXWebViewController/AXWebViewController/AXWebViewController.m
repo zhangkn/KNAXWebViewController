@@ -1846,7 +1846,7 @@ BOOL AX_WEB_VIEW_CONTROLLER_iOS10_0_AVAILABLE() { return AX_WEB_VIEW_CONTROLLER_
         self.navigationItem.rightBarButtonItems = items.reverseObjectEnumerator.allObjects;
     } else {
         
-        NSArray *items = [NSArray arrayWithObjects: fixedSpace,self.HomeBarButtonItem,fixedSpace, self.backBarButtonItem, flexibleSpace, self.forwardBarButtonItem, flexibleSpace, refreshStopBarButtonItem, flexibleSpace, self.actionBarButtonItem, fixedSpace, nil];
+        NSArray *items = [NSArray arrayWithObjects: fixedSpace,self.HomeBarButtonItem,flexibleSpace, self.backBarButtonItem, flexibleSpace, self.forwardBarButtonItem, flexibleSpace, refreshStopBarButtonItem, flexibleSpace, self.actionBarButtonItem, fixedSpace, nil];
 
         
         self.navigationController.toolbar.barStyle = self.navigationController.navigationBar.barStyle;
