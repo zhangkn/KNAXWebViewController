@@ -27,7 +27,7 @@ typedef NS_ENUM(NSUInteger, GradientType) {
 
 @interface UIImage (Extension)
 
-
++ (instancetype)getUIImageRenderingModeAlwaysOriginalWithImg:(UIImage*)aimage;
 + (UIImage *) createImageWithColor: (UIColor *) color;
 
 

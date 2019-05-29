@@ -91,6 +91,16 @@ UIImage *image = [aimage imageWithRenderingMode:UIImageRenderingModeAlwaysOrigin
     return image;
 }
 
++ (instancetype)getUIImageRenderingModeAlwaysOriginalWithImg:(UIImage*)aimage{
+    
+    
+    UIImage *image = [aimage imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+    
+    return image;
+}
+
+
+
 
 + (instancetype)gradientColorImageFromColors:(NSArray *)colors frame:(CGRect)frame{
     

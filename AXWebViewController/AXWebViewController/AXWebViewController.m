@@ -705,7 +705,16 @@ BOOL AX_WEB_VIEW_CONTROLLER_iOS10_0_AVAILABLE() { return AX_WEB_VIEW_CONTROLLER_
     if (_HomeBarButtonItem) return _HomeBarButtonItem;
 //    _HomeBarButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(reloadFirstNSURLClicked:)];
     
-    UIBarButtonItem *rightBtn = [[UIBarButtonItem alloc]initWithImage:[UIImage getUIImageRenderingModeAlwaysOriginalWithImgName:@"icon_cashier_selected"] style:(UIBarButtonItemStyleDone) target:self action:@selector(reloadFirstNSURLClicked:)];
+    
+    
+    UIBarButtonItem *rightBtn = [[UIBarButtonItem alloc]initWithImage:[UIImage getUIImageRenderingModeAlwaysOriginalWithImg:[KNResourceTool processPng:@"icon_cashier_selected"]] style:(UIBarButtonItemStyleDone) target:self action:@selector(reloadFirstNSURLClicked:)];
+
+    
+    
+    
+    
+    
+//    UIBarButtonItem *rightBtn = [[UIBarButtonItem alloc]initWithImage:[UIImage getUIImageRenderingModeAlwaysOriginalWithImgName:@"icon_cashier_selected"] style:(UIBarButtonItemStyleDone) target:self action:@selector(reloadFirstNSURLClicked:)];
     _HomeBarButtonItem = rightBtn;
     
     

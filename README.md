@@ -3,8 +3,22 @@
 
 
 ```
-➜  AXWebViewController git:(master) ✗ kngit 0.7.4                                                           
+➜  AXWebViewController git:(master) ✗ kngit 0.7.4
+➜  AXWebViewController git:(master) git tag -a 0.7.4 -m "0.7.4"                                           
+➜  AXWebViewController git:(master) git push origin --tags                                                
+➜  AXWebViewController git:(master) ✗ pod lib lint KNAXWebViewController.podspec --allow-warnings --no-clean
 
+pod trunk push  KNAXWebViewController.podspec --allow-warnings
+
+
+```
+
+# see also
+
+#### `  Ensure that Xcode -> Window -> Devices has at least one `ios` simulator listed or otherwise add one.) during validation.`
+
+```
+➜  AXWebViewController git:(master) ✗ sudo gem install cocoapods 
 
 ```
 
